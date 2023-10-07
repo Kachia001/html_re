@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.text-underbar{
+  text-decoration: underline;
+  color: blue;
+  font-size: 18px;
+}
+td, tr, th {
+  
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 400px;
+  background-color: aliceblue;
+}
+.background {
+  background-color: rgba(88, 152, 174, 0.759);
+
+}
+.title-name {
+  color: blue;
+}
+.image-head{
+  width: 15%;
+  border-top-left-radius: 10px;
+}
+.item-head{
+  width: 30%;
+  text-transform: uppercase;
+}
+.amount-head{
+  width: 15%;
+  text-align: right;
+  text-transform: uppercase;
+}
+.price-head{
+  width: 15%;
+  text-align: right;
+  text-transform: uppercase;
+}
+.total-head{
+  width: 20%;
+  text-align: right;
+  border-top-right-radius: 10px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+.form{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.data-left{
+  text-align: left;
+}
+.data-right{
+  text-align: right;
+  border-bottom-right-radius: 10px;
+  padding-right: px;
+}
+.img-align{
+  display: block;
+  padding-left: 20px;
+}
+.table-radius{
+  border-radius: 10px;
+  border-collapse: collapse;
+  
+}
+.table-radius-angle{
+  border-top-right-radius: 10px;
+}
+.left-bottom-edge {
+  border-bottom-left-radius: 10px;
+}
+.right-bottom-edge {
+  border-bottom-right-radius: 10px;
+}
+.button{
+  width: 30%;
+  height: 80px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  display: inline;
+  box-sizing: border-box;
+  float: right;
+  border-radius: 10px;
+  position: relative;
+  top:-30px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: chocolate;
+}
+.button:focus {
+  background-color: gray;
+}
+.button:active {
+  background-color: brown;
+}
+
+.button-text{
+  margin: auto;
+  display: inline;
+  clear: both;
+}
+.table-line{
+  border-bottom: 3px solid rgba(88, 152, 174, 0.759);
+}
+.padding{
+  padding-right: 20px;
+}

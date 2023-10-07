@@ -1,3 +1,10 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
 .imgcenter {
     width: 100px;
     display: block;
@@ -75,12 +82,13 @@
     background-position: center;
     background-attachment: ;
     position: relative;
+    padding: 1px;
 }
 
 .main-title {
     color: red;
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -103,17 +111,31 @@
     transform: translate(-50%, -50%);
 }
 .sub-body {
-    width: auto;
+    width: 40%;
+    max-width: 400px;
+    min-width: 300px;
     height: auto;
+    margin: auto;
     background-color: #00000063;
     color: blueviolet;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 160px;
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    box-sizing: border-box;
+    z-index: 10;
+    
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+ 
 }
 
+input[type=text]{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
 
 
 
@@ -126,7 +148,69 @@ display : block;
 기본으로 가지고있음
 */
 
-<p>이미지 가운데정렬 display : block;
+/* <p>이미지 가운데정렬 display : block;
 margin-left : auto;
 margin-right : auto;
-</p>
+</p> */
+
+
+td, tr, th {
+    border: 2px solid black;
+  }
+  
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 600px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navigation-item{
+width: 100px;
+height: 80px;
+background-color: gray;
+text-align: center;
+margin: 5px;
+display: inline;
+
+
+}
+.grow{
+    flex-grow: 3;
+    text-align: left;
+}
+.auto{
+    
+   
+}
+.s-flex{
+    display: flex;
+    align-items: center;
+}
+.s-item{
+    width: 80px;
+    height: 50px;
+    background-color: gray;
+    margin: 5px;
+    text-align: center;
+}
+@media screen and (max-width : 1200px) {
+    .s-flex {
+
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .s-flex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
