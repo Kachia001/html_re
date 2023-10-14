@@ -192,17 +192,34 @@ display: inline;
 .s-flex{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .s-item{
-    width: 80px;
-    height: 50px;
+    width: 100%;
+    height: ;
     background-color: gray;
     margin: 5px;
     text-align: center;
 }
+.a-black{
+    background-color: rgba(0,0,0,0.5);
+    width : 100%;
+    height: 10%;
+    position : absolute;
+}
 @media screen and (max-width : 1200px) {
     .s-flex {
-
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .s-item{
+        width:45%;
+        height: 50px;
+        background-color: gray;
+        margin: 5px;
+        text-align: center;
+        
     }
 }
 
