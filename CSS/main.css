@@ -195,17 +195,33 @@ display: inline;
     width: 100%;
 }
 .s-item{
-    width: 100%;
-    height: ;
+    width: 20%;
+    height: 100px;
     background-color: gray;
     margin: 5px;
     text-align: center;
 }
 .a-black{
     background-color: rgba(0,0,0,0.5);
-    width : 100%;
-    height: 10%;
-    position : absolute;
+    width : 20%;
+    height: 80px;
+    opacity: 0;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    transform: translateY();
+}
+.a-black:hover {
+    opacity: 1;
+    font-size: 2rem;
+    transform: translateY(-40%);
+    
+
+}
+.color-w{
+    color: white;
 }
 @media screen and (max-width : 1200px) {
     .s-flex {
